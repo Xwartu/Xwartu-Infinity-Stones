@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=================================== Leberkassemmal ==========================================-->
+
+	<RecipeDef ParentName="CookMealFineBase">
+		<defName>ALS_CookLeberkassemmal</defName>
+		<label>cook leberkassemmal</label>
+		<description>Cook a leberkassemmal from a combination of meat and plant ingredients.</description>
+		<jobString>Cooking leberkassemmal.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+		</ingredients>
+		<products>
+			<ALS_Leberkassemmal>1</ALS_Leberkassemmal>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealFineBulkBase">
+		<defName>ALS_CookLeberkassemmalBulk</defName>
+		<label>cook leberkassemmal x4</label>
+		<description>Cook 4 leberkassemmal from a combination of meat and plant ingredients. Some of the ingredients are wasted in order to create a good eating experience.</description>
+		<jobString>Cooking 4 leberkassemmal.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>1.0</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1.0</count>
+			</li>
+		</ingredients>
+		<products>
+			<ALS_Leberkassemmal>4</ALS_Leberkassemmal>
+		</products>
+	</RecipeDef>
+
+</Defs>

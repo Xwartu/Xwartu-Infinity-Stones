@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MealFineBase">
+		<defName>ALS_Leberkassemmal</defName>
+		<label>leberkassemmal</label>
+		<description>A simple old earth dish made from a slice meat and a baked loaf of bred pan.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Leberkassemmal</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<WorkToMake>350</WorkToMake>
+			<Nutrition>0.85</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
